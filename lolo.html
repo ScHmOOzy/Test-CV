@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Vos fichiers d'entête ci dessous, pour lier style.css et ajouter la webfont 'Open Sans'-->
+  <link rel="stylesheet" href="lolo.css" />
+  <title>Test CV en HTML/CSS</title>
+</head>
+<body>
+
+<!-- Créer une navagation ici   -->
+<nav>
+	<div class="navigation">
+		<a href="#nom" class="bouton_nom">LoLo Schem</a>
+		<a href="#accueil" class="bouton_menu">Accueil</a>
+		<a href="#formation" class="bouton_menu">Formation</a>
+		<a href="#travaux" class="bouton_menu">Travaux</a>
+		<a href="#contact" class="bouton_menu">Contact</a>
+	</div>
+</nav>
+
+<!-- Créer la section accueil ici   -->
+<section>
+	<div class="image" id="accueil" style="background-image: url('img/cv-bg-3.jpg')">
+		<h1 class="section">CV<br>HTML<br><img id="html5" src="img/html5.jpg"></h1>
+	</div>
+</section>
+
+<!-- Créer la section formation ici   -->
+<section>
+	<div class="image" id="formation" style="background-image: url('img/cv-bg-1.jpg')">
+		<h1 class="section">Formation</h1>
+	</div>
+</section>
+
+<!-- Créer la section travaux ici   -->
+<section>
+	<div class="image" id="travaux" style="background-image: url('img/cv-bg-4.jpg')">
+		<h1 class="section">Travaux</h1>
+	</div>
+</section>
+
+<!-- Créer la section contact ici   -->
+<section>
+	<div class="image" id="contact" style="background-image: url('img/cv-bg-2.jpg')">
+		<h1 class="section">Contact</h1>
+	</div>
+</section>
+</body>
+</html>
+
+    
+<!-- La classe "image" est identique pour les 4 sections (accueil, travaux, formation, contact). Ce qui posait problème cétait l'affichage des images puisqu'elles changeaient à chaque catégorie. Il a donc fallu tricher et inclure du CSS dans le code HTML pour que chaque section affiche sa propre image. Ca permet d'éviter les répétitions dans le CSS du coup ;) -->
