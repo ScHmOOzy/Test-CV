@@ -28,15 +28,15 @@ body{
 
 .image{
 	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    text-align: center;
-    display: flex;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        text-align: center;
+        display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 30px;
 	min-height: 100vh;      /* La mesure VH (viewport height),*/
-}                           /* c'est LA formule magique ! */
+}                               /* c'est LA formule magique ! */
 
 
 .section{
