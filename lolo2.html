@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Vos fichiers d'entête ci dessous, pour lier style.css et ajouter la webfont 'Open Sans'-->
+
+  <link rel="stylesheet" href="style2.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!-- On appelle le fichier script.js dans le html -->
+  <script type="text/javascript" src="script.js"></script> 
+  
+  <title>Test CV en HTML/CSS</title>
+</head>
+<body>
+
+<!-- On appelle le texte du fichier script.js -->
+<script>
+document.write(texte);
+</script>
+
+<!-- Créer une navagation ici   -->
+<nav class="navigation">	
+	<a href="#nom" class="bouton_nom">LoLo Schem</a>
+	<a href="#accueil" class="bouton_menu">Accueil</a>
+	<a href="#formation" class="bouton_menu">Formation</a>
+	<a href="#travaux" class="bouton_menu">Travaux</a>
+	<a href="#contact" class="bouton_menu">Contact</a>
+</nav>
+
+<!-- Créer la section accueil ici   -->
+<section>
+	<div class="image" id="accueil" style="background-image: url('img/cv-bg-3.jpg')">
+		<h1 class="section">CV<br>HTML<br><img id="html5" src="img/html5.jpg"></h1>
+	</div>
+</section>
+
+<!-- Créer la section formation ici   -->
+<section>
+	<div class="image" id="formation" style="background-image: url('img/cv-bg-1.jpg')">
+		<h1 class="section">Formation</h1>
+	</div>
+</section>
+
+<!-- Créer la section travaux ici   -->
+<section>
+	<div class="image" id="travaux" style="background-image: url('img/cv-bg-4.jpg')">
+		<h1 class="section">Travaux</h1>
+	</div>
+</section>
+
+<!-- Créer la section contact ici   -->
+<section>
+	<div class="image" id="contact" style="background-image: url('img/cv-bg-2.jpg')">
+		<h1 class="section">Contact</h1>
+	</div>
+</section>
+</body>
+</html>
+
+    

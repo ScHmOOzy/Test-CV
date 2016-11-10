@@ -1,0 +1,140 @@
+/*Ici vient votre code CSS*/
+
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+
+.navigation{
+	background-color: rgba(255, 51, 0, 1);
+	height: 70px;
+	width: 100%;
+	padding-left: 10px;
+	color: white;
+	position: fixed;
+	display: flex;
+	align-items: center;
+}
+
+
+.image{
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-align: center;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+	min-height: 100vh;      /* La mesure VH (viewport height) adapte */
+}                           /* la taille automatiquement selon les dimensions */
+							/* de la fenêtre :) */
+
+.section{
+	margin: 0;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 4em;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	border: solid 2px;
+	border-color: white;
+	border-radius: 50px;
+	padding: 25px;
+}
+
+
+.bouton_nom{
+	font-size: 1.2em;
+	padding: 10px;
+	margin-right: 15px;
+	color: white;
+	border: solid;
+	border-color: white;
+	border-radius: 9px;
+}
+
+
+.bouton_menu{
+	padding: 10px;
+	margin-right: 15px;
+	border-radius: 9px;
+}
+
+
+.bouton_menu:hover{
+	border: solid;
+	border-color: white;
+	background-color: white;
+	color: #DF6A03;
+}
+
+
+#html5{
+	margin: 15px;
+	height: 180px;
+}
+
+/* Ci-dessous s'ajoutent les règles pour rendre le menu responsive et 
+   l'afficher verticalement selon la taille de l'écran (ou fenêtre).
+   Je me suis amusé à rendre le reste de l'affichage également responsive
+   pour ne pas que les gros élements (le texte au milieu par exemple)
+   dépassent de chaque côté de la fenêtre */
+
+
+@media all and (max-width: 1024px)
+{
+	.navigation	{
+		height: 100%;
+		width: 110px;
+		padding-left: 10px;
+		flex-direction: column; /* le column permet d'aligner les éléments
+								   verticalement dès lors que la taille de 
+								   l'écran est égale ou inférieure à 1024px
+								   de large */
+		}
+
+	.section{
+		margin-left : 120px;		/* ici je décale les sections centrales
+								   (les catégories affichées au centre de 
+								   l'écran) vers la droite pour
+								   qu'elles restent à peu près centrées dès
+								   que la barre latérale de gauche devient active */
+	}
+
+	.bouton_nom {
+		margin-top: 10px;		/* on décale le 'bouton' du nom de 10px
+								   vers le bas pour ne pas qu'il colle à la
+								   barre orange en haut */
+		
+	}
+
+	.bouton_menu{
+		margin-top: 20px;		/* idem pour les boutons de navigation */
+	}
+
+}
+
+
+/* J'ajoute des règles pour les écrans de 560px de largeur ou moins */
+
+
+@media all and (max-width: 560px)
+{
+	.section{					/* Modification de la taille de police, de */
+	margin-left : 120px;		/* la marge à gauche, de l'épaisseur de la */
+	font-size: 2.2em;			/* bordure du cadre de section, du radius du */
+	border: solid 1px;			/* cadre (l'angle de l'arrondi), ainsi que la */
+	border-radius: 25px;		/* marge intérieure (padding) */
+	padding: 15px;
+	}
+}

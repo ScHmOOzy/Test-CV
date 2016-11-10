@@ -1,0 +1,1 @@
+var texte="Bienvenue sur mon site !";
