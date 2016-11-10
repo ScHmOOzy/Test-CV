@@ -135,6 +135,6 @@ body{
 	font-size: 2.2em;			/* bordure du cadre de section, du radius du */
 	border: solid 1px;			/* cadre (l'angle de l'arrondi), ainsi que la */
 	border-radius: 25px;			/* marge intérieure (padding) */
-	padding: 15px;				/* lorsque l'écran est égale ou inférieur à 560px de large */
+	padding: 15px;				/* lorsque l'écran est égal ou inférieur à 560px de large */
 	}
 }
