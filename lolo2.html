@@ -5,6 +5,7 @@
 
   <link rel="stylesheet" href="style2.css" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
   <!-- On appelle le fichier script.js dans le html -->
   <script type="text/javascript" src="script.js"></script> 
@@ -18,7 +19,7 @@
 document.write(texte);
 </script>
 
-<!-- Créer une navagation ici   -->
+<!-- Créer une navigation ici   -->
 <nav class="navigation">	
 	<a href="#nom" class="bouton_nom">LoLo Schem</a>
 	<a href="#accueil" class="bouton_menu">Accueil</a>
@@ -28,33 +29,37 @@ document.write(texte);
 </nav>
 
 <!-- Créer la section accueil ici   -->
-<section>
-	<div class="image" id="accueil" style="background-image: url('img/cv-bg-3.jpg')">
-		<h1 class="section">CV<br>HTML<br><img id="html5" src="img/html5.jpg"></h1>
-	</div>
-</section>
+<div class="image" id="accueil">
+	<h1 class="section">CV<br>HTML<br><img id="html5" src="img/html5.jpg"></h1>	
+</div>
 
 <!-- Créer la section formation ici   -->
-<section>
-	<div class="image" id="formation" style="background-image: url('img/cv-bg-1.jpg')">
-		<h1 class="section">Formation</h1>
-	</div>
-</section>
+<div class="image" id="formation">
+	<h1 class="section">Formation</h1>
+</div>
 
 <!-- Créer la section travaux ici   -->
-<section>
-	<div class="image" id="travaux" style="background-image: url('img/cv-bg-4.jpg')">
-		<h1 class="section">Travaux</h1>
-	</div>
-</section>
+<div class="image" id="travaux">
+	<h1 class="section">Travaux</h1>
+		<table>
+			<thead>
+				<td>Titre</td>
+				<td>Vignette</td>
+				<td>Techno/technique utilisée</td>
+				<td>Date</td>				
+			</thead>
+			<tbody>
+				<td><a href="lolo2.html">Mon premier CV<br>en HTML/CSS</a></td>
+				<td><img src="img/html5.jpg" id="html5b"></td>
+				<td>HTML5, CSS3...</td>
+				<td>11/2016</td>
+			</tbody>
+		</table> 
+</div>
 
 <!-- Créer la section contact ici   -->
-<section>
-	<div class="image" id="contact" style="background-image: url('img/cv-bg-2.jpg')">
-		<h1 class="section">Contact</h1>
-	</div>
-</section>
+<div class="image" id="contact">
+	<h1 class="section">Contact</h1>
+</div>
 </body>
 </html>
-
-    
