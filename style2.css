@@ -35,9 +35,9 @@ body{
 	align-items: center;
 	justify-content: center;
 	padding: 30px;
-	min-height: 100vh;      /* La mesure VH (viewport height) adapte */
-}                           /* la taille automatiquement selon les dimensions */
-							/* de la fenêtre :) */
+	min-height: 100vh;    	 	/* La mesure VH (viewport height) adapte */
+}                         	 	/* la taille automatiquement selon les dimensions */
+					/* de la fenêtre :) */
 
 .section{
 	margin: 0;
@@ -129,14 +129,14 @@ table{
 		height: 100%;
 		width: 110px;
 		padding-left: 10px;
-		flex-direction: column; /* le column permet d'aligner les éléments
+		flex-direction: column;				 /* le column permet d'aligner les éléments
 								   verticalement dès lors que la taille de 
 								   l'écran est égale ou inférieure à 1024px
 								   de large */
 		}
 
 	.section{
-		margin-left : 120px;		/* ici je décale les sections centrales
+		margin-left : 120px;				/* ici je décale les sections centrales
 								   (les catégories affichées au centre de 
 								   l'écran) vers la droite pour
 								   qu'elles restent à peu près centrées dès
@@ -162,11 +162,11 @@ table{
 
 @media all and (max-width: 560px)
 {
-	.section{					/* Modification de la taille de police, de */
-	margin-left : 120px;		/* la marge à gauche, de l'épaisseur de la */
+	.section{				/* Modification de la taille de police, de */
+	margin-left : 120px;			/* la marge à gauche, de l'épaisseur de la */
 	font-size: 2.2em;			/* bordure du cadre de section, du radius du */
 	border: solid 1px;			/* cadre (l'angle de l'arrondi), ainsi que la */
-	border-radius: 25px;		/* marge intérieure (padding) */
+	border-radius: 25px;			/* marge intérieure (padding) */
 	padding: 15px;				/* quand l'écran est égal ou inférieur à 560px */
 	}
 }
