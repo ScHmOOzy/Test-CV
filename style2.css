@@ -35,12 +35,13 @@ body{
 	align-items: center;
 	justify-content: center;
 	padding: 30px;
-	min-height: 100vh;    	 	/* La mesure VH (viewport height) adapte */
-}                         	 	/* la taille automatiquement selon les dimensions */
-					/* de la fenêtre :) */
+	min-height: 100vh;      /* La mesure VH (viewport height) adapte */
+}                           /* la taille automatiquement selon les dimensions */
+							/* de la fenêtre :) */
 
 .section{
-	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 	vertical-align: middle;
 	font-size: 4em;
@@ -105,6 +106,8 @@ body{
    pour ne pas que les gros élements (le texte au milieu par exemple)
    dépassent de chaque côté de la fenêtre */
 
+
+
 /* Code CSS pour le tableau de la section Travaux */
 
 td{
@@ -113,9 +116,11 @@ td{
 }
 
 table{
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 700px;
 	border-collapse: collapse;
-	background-color: rgba(88, 47, 17, 0.6);
+	background-color: rgba(75, 43, 19, 0.6);
 }
 
 #html5b{
@@ -130,14 +135,14 @@ table{
 		height: 100%;
 		width: 110px;
 		padding-left: 10px;
-		flex-direction: column;				 /* le column permet d'aligner les éléments
+		flex-direction: column; /* le column permet d'aligner les éléments
 								   verticalement dès lors que la taille de 
 								   l'écran est égale ou inférieure à 1024px
 								   de large */
 		}
 
 	.section{
-		margin-left : 120px;				/* ici je décale les sections centrales
+		margin-left : 120px;		/* ici je décale les sections centrales
 								   (les catégories affichées au centre de 
 								   l'écran) vers la droite pour
 								   qu'elles restent à peu près centrées dès
@@ -163,11 +168,11 @@ table{
 
 @media all and (max-width: 560px)
 {
-	.section{				/* Modification de la taille de police, de */
-	margin-left : 120px;			/* la marge à gauche, de l'épaisseur de la */
+	.section{					/* Modification de la taille de police, de */
+	margin-left : 120px;		/* la marge à gauche, de l'épaisseur de la */
 	font-size: 2.2em;			/* bordure du cadre de section, du radius du */
 	border: solid 1px;			/* cadre (l'angle de l'arrondi), ainsi que la */
-	border-radius: 25px;			/* marge intérieure (padding) */
+	border-radius: 25px;		/* marge intérieure (padding) */
 	padding: 15px;				/* quand l'écran est égal ou inférieur à 560px */
 	}
 }
